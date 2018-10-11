@@ -1,0 +1,10 @@
+<h1>Switch Names</h1>
+
+<ol>
+<% @switches.each do |s| %>
+  <li>
+    <%= link_to s.name, s %> is <%= find_switch(s).on? ? 'on' : 'off' %>
+  </li>
+<% end %>
+</ol>
+

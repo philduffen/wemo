@@ -1,0 +1,5 @@
+<h2>Switch (<%= @switch.name %>)</h2>
+
+State: <%= find_switch(@switch).on? ? 'on' : 'off' %>
+
+<%= link_to 'toggle state', switch_path %>
