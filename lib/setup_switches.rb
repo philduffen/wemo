@@ -1,5 +1,3 @@
-# require 'wemote'
-
 module SetupSwitches
 
   def setup_switches
