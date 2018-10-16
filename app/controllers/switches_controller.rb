@@ -16,4 +16,10 @@ class SwitchesController < ApplicationController
     redirect_to @switch
   end
 
+  def toggle
+    @switch = Switch.find(params[:switch])
+    Wemote::Switch.find(@switch.name).toggle!
+    redirect_to @switch
+  end
+
 end
